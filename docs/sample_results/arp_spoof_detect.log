@@ -1,0 +1,8 @@
+[2026-11-12 04:18:13] (INFO) arp_detector: ARP spoof detector started on br-it (IT zone).
+[2026-11-12 04:18:17] (CRITICAL) arp_detector: ARP spoofing suspected in IT: 10.10.1.1 was ca:ba:60:c9:c5:b8, now claimed by 26:92:a0:01:b3:99.
+[2026-11-12 04:18:17] (CRITICAL) arp_detector: ARP spoofing suspected in IT: 10.10.1.1 was 26:92:a0:01:b3:99, now claimed by ca:ba:60:c9:c5:b8.
+
+# attacker console:
+# [arp_spoof] Attacker MAC: ca:ba:60:c9:c5:b8
+# [arp_spoof] Telling 10.10.1.11 that 10.10.1.1 is at ca:ba:60:c9:c5:b8 for 8s...
+# [arp_spoof] Done. Sent 8 spoofed ARP replies.

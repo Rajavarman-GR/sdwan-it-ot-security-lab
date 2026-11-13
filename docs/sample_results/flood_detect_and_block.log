@@ -1,0 +1,15 @@
+[2026-11-11 17:56:28] (INFO) controller: Controller started. Active path: WAN1
+[2026-11-11 17:56:29] (INFO) flood_detector: Flood detector started (threshold=300 pps, window=2s) on ['itlink', 'otlink'].
+[2026-11-11 17:56:33] (WARNING) flood_detector: Link flooding suspected from 10.10.1.11 (~375 pkt/s).
+[2026-11-11 17:56:33] (CRITICAL) flood_detector: Blocked 10.10.1.11 at branch_rtr (iptables FORWARD DROP) after sustained flood.
+[2026-11-11 17:56:35] (WARNING) flood_detector: Link flooding suspected from 10.10.1.11 (~1005 pkt/s).
+[2026-11-11 17:56:53] (WARNING) flood_detector: Link flooding suspected from 10.10.1.11 (~505 pkt/s).
+
+# attacker console:
+# [link_flood] Flooding 10.10.9.50 for 20s (best-effort ~3000 pps)...
+# [link_flood] Done. Sent approximately 18240 packets.
+
+# branch_rtr iptables FORWARD chain after the block:
+# Chain FORWARD (policy DROP)
+# num  target     prot opt source               destination
+# 1    DROP       0    --  10.10.1.11           0.0.0.0/0

@@ -1,0 +1,8 @@
+[2026-11-12 04:18:32] (INFO) rogue_gateway_detector: Rogue gateway detector started on br-ot. Trusted MAC for 10.10.2.1 is 2a:a6:e2:41:e4:5c.
+[2026-11-12 04:18:34] (CRITICAL) rogue_gateway_detector: Rogue gateway detected: 10.10.2.1 claimed by 1e:af:66:c2:a2:f0, expected 2a:a6:e2:41:e4:5c.
+[2026-11-12 04:18:41] (CRITICAL) rogue_gateway_detector: Rogue gateway detected: 10.10.2.1 claimed by 1e:af:66:c2:a2:f0, expected 2a:a6:e2:41:e4:5c.
+
+# attacker console:
+# [rogue_gateway] Attacker MAC: 1e:af:66:c2:a2:f0
+# [rogue_gateway] Broadcasting gratuitous ARP: "10.10.2.1 is at 1e:af:66:c2:a2:f0" for 8s...
+# [rogue_gateway] Done. Sent 8 gratuitous ARP announcements.

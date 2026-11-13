@@ -1,0 +1,3 @@
+[2026-11-11 17:59:00] (INFO) controller: Controller started. Active path: WAN1
+[2026-11-11 17:59:05] (WARNING) controller: WAN1 degraded (loss=90%). Failing over to WAN2.
+[2026-11-11 17:59:23] (INFO) controller: WAN1 recovered (loss=0%). Failing back to WAN1.
